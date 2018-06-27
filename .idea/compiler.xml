@@ -9,8 +9,5 @@
         <module name="spring-boot-rabbitmq" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spring-boot-rabbitmq" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="spring-boot-rabbitmq">
-    <output-path>$PROJECT_DIR$/out/artifacts/spring_boot_rabbitmq</output-path>
-    <root id="archive" name="spring-boot-rabbitmq.war">
-      <element id="artifact" artifact-name="spring-boot-rabbitmq:war exploded" />
-    </root>
-  </artifact>
-</component>
