@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Class-Path: spring-beans-4.3.4.RELEASE.jar spring-boot-1.4.2.RELEASE.j
+ ar jul-to-slf4j-1.7.21.jar spring-messaging-4.3.4.RELEASE.jar logback
+ -classic-1.1.7.jar commons-lang3-3.0.jar aliyun-java-sdk-dysmsapi-1.0
+ .0.jar spring-tx-4.3.4.RELEASE.jar http-client-1.0.0.RELEASE.jar lomb
+ ok-1.16.8.jar spring-core-4.3.4.RELEASE.jar commons-codec-1.10.jar sp
+ ring-amqp-1.6.5.RELEASE.jar slf4j-api-1.7.21.jar spring-boot-starter-
+ amqp-1.4.2.RELEASE.jar httpcore-4.4.5.jar jackson-databind-2.8.4.jar 
+ spring-rabbit-1.6.5.RELEASE.jar jackson-core-2.8.4.jar snakeyaml-1.17
+ .jar spring-boot-starter-logging-1.4.2.RELEASE.jar log4j-over-slf4j-1
+ .7.21.jar aliyun-java-sdk-core-3.3.1.jar httpclient-4.5.2.jar spring-
+ boot-starter-1.4.2.RELEASE.jar spring-web-4.3.4.RELEASE.jar spring-ao
+ p-4.3.4.RELEASE.jar aliyun-sdk-oss-2.0.6.jar jcl-over-slf4j-1.7.21.ja
+ r jackson-annotations-2.8.4.jar spring-retry-1.1.4.RELEASE.jar spring
+ -context-4.3.4.RELEASE.jar spring-boot-autoconfigure-1.4.2.RELEASE.ja
+ r logback-core-1.1.7.jar spring-boot-devtools-1.4.2.RELEASE.jar amqp-
+ client-3.6.5.jar aliyun-java-sdk-sts-2.1.6.jar spring-expression-4.3.
+ 4.RELEASE.jar
+Main-Class: com.fadu.springboot.SpringBootWebApplication
+

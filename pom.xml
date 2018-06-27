@@ -6,7 +6,7 @@
 	<groupId>com.neo</groupId>
 	<artifactId>spring-boot-rabbitmq</artifactId>
 	<version>1.0.0</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>spring-boot-rabbitmq</name>
 	<description>Demo project for Spring Boot and rabbitmq</description>
@@ -28,6 +28,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -42,9 +46,63 @@
 	        <artifactId>spring-boot-devtools</artifactId>
 	        <optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<!-- lombok注解生成get/set方法 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.8</version>
+		</dependency>
+		<!-- 阿里云短信依赖-开始 -->
+		<dependency>
+			<groupId>aliyun.api</groupId>
+			<artifactId>aliyun-java-sdk-core</artifactId>
+			<version>2.1.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/lib/aliyunlib/aliyun-java-sdk-core-2.1.7.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>aliyun.api</groupId>
+			<artifactId>aliyun-java-sdk-sts</artifactId>
+			<version>2.1.6</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/lib/aliyunlib/aliyun-java-sdk-sts-2.1.6.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>aliyun.api</groupId>
+			<artifactId>aliyun-sdk-oss</artifactId>
+			<version>2.0.6</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/lib/aliyunlib/aliyun-sdk-oss-2.0.6.jar</systemPath>
+		</dependency>
+        <!-- 阿里云短信-->
+        <dependency>
+            <groupId>aliyun.api</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>3.3.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/lib/dysmslib/aliyun-java-sdk-core-3.3.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>aliyun.api</groupId>
+            <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/lib/dysmslib/aliyun-java-sdk-dysmsapi-1.0.0.jar</systemPath>
+        </dependency>
+		<!-- 阿里云短信依赖-结束 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
 	</dependencies>
-	
 	<build>
+        <finalName>spring-boot-rabbitmq</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -55,6 +113,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-
 </project>
