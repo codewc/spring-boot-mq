@@ -2,10 +2,8 @@ server:
   port: 8888
 spring:
   application:
-    #应用名字
     name: duowen-sms-rabbitmq
 
-  #rabbitmq的配置
   rabbitmq:
     host: 192.168.42.129
     port: 5672
@@ -15,7 +13,6 @@ spring:
 
 logging:
   level: info
-# error日志输出
 #log4j.appender.errorfile=org.apache.log4j.DailyRollingFileAppender
 #log4j.appender.errorfile.file=logs/error.log
 #log4j.appender.errorfile.DatePattern='.'yyyy-MM-dd
